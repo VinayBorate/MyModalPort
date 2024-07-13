@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="stylemodaal.css">
+     <link rel="icon" href="/asset/Viconfavigon.png" type="image/x-icon">
+</head>
+<body>
+   
+    <div class="container">
+        <!-- circle1 -->
+      <div id="circle1"></div>
+        <!-- circle2 -->
+      <div id="circle2"></div>
+
+        <!-- card -->
+         <div class="wrapper">
+             <!-- photo -->
+             <div>
+                 <img src="/asset/myimage.png" alt="myphoto">
+             </div>
+              <!-- name -->
+             <div>
+                 <h2>Vinay Borate</h2>
+             </div>
+              <!-- auda -->
+             <div>
+                 <h3>competitive programmer</h3>
+             </div>
+             <div class>
+                <!-- contains button -->
+                 <button class="btn sharebtn" onclick="openmodal()">
+                 <i class="fa fa-share" aria-hidden="true"></i>
+                 <div>Share my profile</div>
+                 </button>
+                 <button class="btn followbtn">
+                    <a href="https://www.linkedin.com/in/vinayborate/">Follow Me</a>
+                 </button>
+             </div>
+
+          </div>
+</div> 
+
+    <!-- Modal Component  -->
+     <div class="modal">
+             <div class="modalheader">
+                  <h1>Share My Profile</h1>
+                  <i class="fa-solid fa-xmark close" onclick="closemodal()"></i>
+             </div>
+             <div>
+                <h3>Share this via</h3>
+                <div class="iconcontainer">
+                    <i id= icon class="fa-brands fa-facebook-f"></i>
+                    <i id= icon class="fa-brands fa-twitter"></i>
+                    <i id= icon class="fa-brands fa-instagram"></i>
+                    <i id= icon class="fa-brands fa-whatsapp"></i>
+                    <i id= icon class="fa-brands fa-telegram"></i>
+                </div>
+             </div>
+
+     </div>
+
+     <!-- Overlay -->
+      <!-- it is the screen(blurscreen) which comes on screen when share button is pressed -->
+      <div class="overlay" onclick="closemodal()"></div>
+   
+
+   <script src="https://kit.fontawesome.com/7672b0bc51.js" crossorigin="anonymous"></script>
+    <script src="myscript.js"></script> 
+</body>
+</html>
