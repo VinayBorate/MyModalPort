@@ -25,7 +25,13 @@
   z-index: 1;
 }
 .wrapper div:nth-child(4) {
-  /* it contains my both button */
+  /* it contains my both button (share)(follow) */ 
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+}
+.wrapper div:nth-child(5) {
+  /* it contains my both button (share)(follow) */ 
    display: flex;
    flex-direction: row;
    gap: 10px;
@@ -48,17 +54,36 @@
 .followbtn {
   width: 150px;
 }
+
+.download a{
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  width: 117px;
+  height: 10px;
+  text-decoration: none;
+  color: #ffffffb9;
+}
+.myportfolio{
+  width: 150px;
+}
+.myportfolio a{
+  text-decoration: none;
+  color: #ffffffb9;
+}
 .followbtn a{
   text-decoration: none;
   color: #ffffffb9;
 }
 .btn:hover {
-  background: #ffffffb9;
-  color: rgb(19, 19, 19);
+  background: #555;
+  color: #ffffffb9;
 }
-.followbtn :hover a{
-  background: #ffffffb9;
-  color: rgb(19, 19, 19);
+.btn.followbtn:hover {
+  background-color: #555; /* Change background color on hover */
+}
+.btn.myportfolio:hover {
+  background-color: #555; /* Change background color on hover */
 }
 
   @keyframes circle1Animate {
